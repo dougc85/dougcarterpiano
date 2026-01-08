@@ -36,6 +36,7 @@ export const HeaderStyled = styled.header`
       font-size: 1.6rem;
       margin-top: 2px;
       font-weight: 300;
+      text-align: center;
     }
 
     ${smallPhoneQuery(`

@@ -37,7 +37,7 @@ function Header() {
       <h1>
         Doug Carter
         <span>
-          Web Development
+          Pianist
         </span>
       </h1>
       <nav>
