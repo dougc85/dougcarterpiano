@@ -3,7 +3,7 @@ import { mediaQueries } from '../../../partials';
 
 const { verySmallPhoneQuery } = mediaQueries;
 
-export const ProjectStyled = styled.li`
+export const GigStyled = styled.li`
 
   display: flex;
   flex-direction: column;

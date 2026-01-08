@@ -20,14 +20,14 @@ export const mediaQueries = {
     }
     `
   },
-  projectsQuery: (properties) => {
+  gigsQuery: (properties) => {
     return `
     @media only screen and (max-width: 1000px) {
       ${properties}
     }
     `
   },
-  projectsNarrowQuery: (properties) => {
+  gigsNarrowQuery: (properties) => {
     return `
     @media only screen and (max-width: 700px) {
       ${properties}

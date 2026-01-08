@@ -1,41 +1,46 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../../partials';
 
-const { projectsQuery, projectsNarrowQuery, verySmallPhoneQuery } = mediaQueries;
+const { verySmallPhoneQuery } = mediaQueries;
 
 export const ProjectsStyled = styled.section`
-  background-color: white;
-  padding: 3rem;
-
-  ${verySmallPhoneQuery(`
-    padding: 3rem 1.5rem;
-  `)}
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
 
   h2 {
-    font-size: 4rem;
-    text-align: center;
     margin-bottom: 5rem;
+    font-size: 4rem;
 
     ${verySmallPhoneQuery(`
       font-size: 3rem;
-      margin-bottom: 4rem;
     `)}
   }
 
-  ul {
-    list-style-type: none;
+  >div {
+    flex: 1;
+    margin: 0 auto;
+    min-width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 3.5rem;
-    max-width: 1400px;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+    gap: 6rem 10px;
+    place-content: center;
+    margin-bottom: 3rem;
 
-    ${projectsQuery(`
-      grid-template-columns: 1fr 1fr;
-      grid-row-gap: 5rem;
-    `)}
 
-    ${projectsNarrowQuery(`
-      grid-template-columns: 1fr;
-    `)}
+    i {
+      font-size: calc(30px + 5vw);;
+      display: block;
+    }
+    img {
+      height: calc(30px + 5vw);
+      display: block;
+      justify-self: center;
+    }
   }
+  
 `

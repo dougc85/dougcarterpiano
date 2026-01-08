@@ -6,8 +6,8 @@ function Header() {
 
   const navItems = [
     'About',
-    'Skills',
     'Projects',
+    'Gigs',
     'Contact',
   ]
 

@@ -1,4 +1,4 @@
-export const projects = [
+export const gigs = [
   {
     img: './images/tunepicker.jpg',
     name: 'tunePicker',

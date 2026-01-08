@@ -2,8 +2,8 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import GlobalStyle from "./globalStyles";
-import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import Gigs from "./components/Gigs/Gigs";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Header />
       <main>
         <About />
-        <Skills />
         <Projects />
+        <Gigs />
       </main>
       <Contact></Contact>
     </div>
