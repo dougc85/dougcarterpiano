@@ -6,12 +6,11 @@ const { verySmallPhoneQuery } = mediaQueries;
 export const ProjectStyled = styled.li`
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  margin: 4rem 0;
+    
   img {
-    width: 250px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: top;
 
@@ -21,26 +20,52 @@ export const ProjectStyled = styled.li`
     `)}
   }
 
-  h3 {
-    font-weight: 600;
-    font-size: 2.4rem;
-    margin-top: 1.5rem;
+  div {
+        margin: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-    ${verySmallPhoneQuery(`
-      font-size: 2rem;
-    `)}
+    h4 {
+        font-weight: 600;
+        font-size: 2.4rem;
+        margin-top: 1.5rem;
+        text-align: left;
+
+        span {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        ${verySmallPhoneQuery(`
+        font-size: 2rem;
+            span {
+                font-size: 1.6rem;
+            }
+        `)}
+     }
+
+    p {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-top: 10px;
+
+        ${verySmallPhoneQuery(`
+        font-size: 1.6rem;
+        `)}
+        span {
+            display: block;
+            margin-top: 3px;
+        }
+        .release-date {
+            font-style: italic;
+            margin-top: 10px;
+        }
+     }
   }
 
-  p {
-    width: 280px;
-    font-size: 1.8rem;
-    text-align: center;
-    margin-top: 10px;
-
-    ${verySmallPhoneQuery(`
-      font-size: 1.6rem;
-    `)}
-  }
+  
 `
 
 export const Links = styled.div`

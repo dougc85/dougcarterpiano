@@ -5,6 +5,25 @@ export const projects = [
         albumTag: (
             <iframe
                 style={{ border: 0, width: 200, height: 200 }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=1435303434/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/"
+                seamless
+                title="Vintage Christmas by Andrée Belle"
+            >
+            <a href="https://andreebelle.bandcamp.com/album/vintage-christmas">
+                Vintage Christmas by Andrée Belle
+            </a>
+            </iframe>
+        ),
+        name: "Vintage Christmas",
+        artist: 'Andrée Belle',
+        description: "Arrangements by Andrée and Tim Conley; featuring a diverse array of musicians, w/ me on Piano",
+        link: 'https://andreebelle.bandcamp.com/album/vintage-christmas',
+        releaseDate: 'November 7, 2025',
+    },
+    {
+        albumTag: (
+            <iframe
+                style={{ border: 0, width: 200, height: 200 }}
                 src="https://bandcamp.com/EmbeddedPlayer/album=1564454768/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/"
                 seamless
                 title="Silver Street by Jacob Wendt"
@@ -20,7 +39,15 @@ export const projects = [
         link: 'https://jacobwendt.bandcamp.com/album/silver-street',
         releaseDate: 'October 18, 2024',
     },
-  {
+    {
+        name: "Songs From the Playground",
+        artist: 'Jazzy Ash',
+        description: "Arrangements by Ashli St. Armant & me; vocals - Ash, piano - me",
+        link: 'https://us.yotoplay.com/products/jazzy-ash-songs-from-the-playground',
+        releaseDate: 'Summer 2021',
+        image: "/images/playground.jpg",
+    },
+{
     name: "I Was Here",
     artist: 'Ryan Rost',
     description: "Compositions and Bass by Ryan; 1st album by the Apropos a'GoGo trio (Peter Buck on drums, me on piano)",
@@ -29,7 +56,7 @@ export const projects = [
     albumTag: (
         <iframe
             style={{ border: 0, width: 200, height: 200 }}
-            src="https://bandcamp.com/EmbeddedPlayer/album=2604498395/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2604498395/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/"
             seamless
             title="I Was Here by Ryan Rost"
         >
@@ -40,18 +67,20 @@ export const projects = [
   {
     name: "The Return to Queendom",
     artist: 'Andrée Belle',
-    description: "Compositions & vocals by Andrée; featuring a diverse array of musicians",
+    description: "Compositions by Andrée and Tim Conley; featuring a diverse array of musicians, w/ me on Wurlitzer",
     link: 'https://andreebelle.bandcamp.com/album/the-return-to-queendom',
     releaseDate: 'March 8, 2019',
     albumTag: (
         <iframe
             style={{ border: 0, width: 200, height: 200 }}
-            src="https://bandcamp.com/EmbeddedPlayer/album=1234567890/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1740877584/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/"
             seamless
             title="The Return to Queendom by Andrée Belle"
         >
-            <a href="https://andreebelle.bandcamp.com/album/the-return-to-queendom">The Return to Queendom by Andrée Belle</a>
-</iframe>
+        <a href="https://andreebelle.bandcamp.com/album/the-return-to-queendom">
+            The Return to Queendom by Andrée Belle
+        </a>
+        </iframe>
     )
   }
 ]
