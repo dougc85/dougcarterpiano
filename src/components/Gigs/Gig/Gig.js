@@ -1,19 +1,36 @@
 import React from 'react';
 import { GigStyled, Links } from './Gig.styled';
 
+function getDayOfWeek(day, month, year) {
+    const date = new Date(year, month - 1, day);
+
+    const days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ];
+
+    return days[date.getDay()];
+  }
+
 function Gig(props) {
 
-  const { image, name, description, live, repo } = props;
-  
+  const { venue, address, day, month, year, time, link, description, cost, image, past } = props;
+
+
   return (
-    <GigStyled key={name}>
-      <a href={live} target="_blank" rel="noreferrer noopener"><img src={image} alt={name} /></a>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <Links>
-        <a href={live} target="_blank" rel="noreferrer noopener">live</a>
-        <a href={repo} target="_blank" rel="noreferrer noopener">repo</a>
-      </Links>
+    <GigStyled key={venue + day + month + year + description} className={past ? 'past' : 'upcoming'}>
+      {image ? <a href={link} target="_blank" rel="noreferrer noopener"><img src={image} alt={`Flyer for this gig, on ${getDayOfWeek(day, month, year)}, ${month}/${day}/${year}, at ${venue}, ${address}`} /></a> : null}
+      <h4>{`${getDayOfWeek(day, month, year)}, ${month}/${day}/${year}`}</h4>
+      <p className='venue'>{venue}<span className='address'>{address}</span></p>
+      <p className='description'>{description}</p>
+      <p className='time'>{time}</p>
+      <p className='cost'>{cost}</p>
+      {link ? <p className='link'><a href={link} target="_blank" rel="noreferrer noopener">More Info</a></p> : null}
     </GigStyled>
   )
 }

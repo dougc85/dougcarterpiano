@@ -1,41 +1,52 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../../partials';
 
-const { gigsQuery, gigsNarrowQuery, verySmallPhoneQuery } = mediaQueries;
+const { gigsQuery, gigsNarrowQuery, verySmallPhoneQuery, aboutNarrowQuery } = mediaQueries;
 
 export const GigsStyled = styled.section`
   background-color: white;
-  padding: 3rem;
+  text-align: center;
+  padding: 4rem 10rem;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
 
-  ${verySmallPhoneQuery(`
-    padding: 3rem 1.5rem;
-  `)}
+  ${aboutNarrowQuery(`
+    padding: 3rem 4rem;
+    `)}
+  
 
+  ul {
+    margin-bottom: 3rem;
+  }
   h2 {
+    margin-bottom: 4rem;
     font-size: 4rem;
-    text-align: center;
-    margin-bottom: 5rem;
 
     ${verySmallPhoneQuery(`
       font-size: 3rem;
-      margin-bottom: 4rem;
     `)}
   }
 
-  ul {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 3.5rem;
-    max-width: 1400px;
+  h3 {
+    margin-bottom: 2rem;
+    text-align: left;
 
-    ${gigsQuery(`
-      grid-template-columns: 1fr 1fr;
-      grid-row-gap: 5rem;
+    ${aboutNarrowQuery(`
+      text-align: center;
+      margin-bottom: -1rem;
     `)}
+  }
 
-    ${gigsNarrowQuery(`
-      grid-template-columns: 1fr;
-    `)}
+  .past {
+    opacity: 0.4;
+  s}
+
+  hr {
+      border: none;
+      height: 1px;
+      background-color: black;
+      color: black;
+      margin: 0 5%;
   }
 `

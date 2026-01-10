@@ -10,7 +10,9 @@ function Project(props) {
         {
         albumTag ? 
             albumTag : 
-            <a href={link} target="_blank" rel="noreferrer noopener"><img src={image} alt={name} /></a>
+            link ? 
+            <a href={link} target="_blank" rel="noreferrer noopener"><img src={image} alt={name} /></a> :
+              <img src={image} alt={name} />  
         }
       <div>
         <h4>{name} <span>{artist}</span></h4>
@@ -22,9 +24,6 @@ function Project(props) {
             {releaseDate}
         </span>
         </p>
-        <Links>
-            <a href={link} target="_blank" rel="noreferrer noopener">link</a>
-        </Links>
       </div>
       
       

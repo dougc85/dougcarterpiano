@@ -6,8 +6,9 @@ const { verySmallPhoneQuery } = mediaQueries;
 export const ProjectStyled = styled.li`
 
   display: flex;
-  margin: 4rem 0;
-    
+  align-items: center;
+  margin: 5rem 0;
+
   img {
     width: 200px;
     height: 200px;
@@ -21,7 +22,7 @@ export const ProjectStyled = styled.li`
   }
 
   div {
-        margin: 0 4rem;
+        margin: 0 0 0 4rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -29,7 +30,6 @@ export const ProjectStyled = styled.li`
     h4 {
         font-weight: 600;
         font-size: 2.4rem;
-        margin-top: 1.5rem;
         text-align: left;
 
         span {
@@ -47,9 +47,12 @@ export const ProjectStyled = styled.li`
      }
 
     p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
         font-size: 1.8rem;
         text-align: left;
-        margin-top: 10px;
+        margin-top: 20px;
+        max-width: 800px;
 
         ${verySmallPhoneQuery(`
         font-size: 1.6rem;
@@ -66,20 +69,4 @@ export const ProjectStyled = styled.li`
   }
 
   
-`
-
-export const Links = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 70px;
-  margin-top: 10px;
-  a {
-    font-size: 1.6rem;
-    display: block;
-    :visited, :active, :link {
-      color: black;
-      text-decoration: none;
-      border-bottom: 1px solid black;
-    }
-  }
-`
+`;
