@@ -26,6 +26,29 @@ function Gigs() {
   return (
     <GigsStyled id="Gigs">
       <h2>Gigs</h2>
+      <h3>Recurring:</h3>
+      <ul>
+        <Gig
+          key="weeklyWednesday"
+          venue="Queensview Steakhouse"
+          recurringMessage="Every Wednesday"
+          description="Solo Piano.  Text me or message me (below) to make sure I'm playing that week!"
+          address="435 Shoreline Village Drive, Long Beach, CA 90802"
+          time="5:30 - 8:30 PM"
+          link="https://www.parkerslighthouse.com"
+          cost="Free (with purchase of food or drink)"
+        />
+        <Gig
+          key="weeklyFriday"
+          venue="Queensview Steakhouse"
+          recurringMessage="Every Friday"
+          description="w/ Apropos a'GoGo Trio (Ryan Rost, bass; Peter Buck, drums).  Text me or message me (below) to make sure I'm playing that week!"
+          address="435 Shoreline Village Drive, Long Beach, CA 90802"
+          time="5:30 - 9:30 PM"
+          link="https://www.parkerslighthouse.com"
+          cost="Free (with purchase of food or drink)"
+        />
+      </ul>
       <h3>Upcoming:</h3>
       <ul>
         {upcomingGigs.map((gig, index) => (

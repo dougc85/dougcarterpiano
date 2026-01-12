@@ -19,13 +19,16 @@ function getDayOfWeek(day, month, year) {
 
 function Gig(props) {
 
-  const { venue, address, day, month, year, time, link, description, cost, image, past } = props;
+  const { venue, address, day, month, year, time, link, description, cost, image, past, recurringMessage } = props;
 
 
   return (
     <GigStyled key={venue + day + month + year + description} className={past ? 'past' : 'upcoming'}>
       {image ? <a href={link} target="_blank" rel="noreferrer noopener"><img src={image} alt={`Flyer for this gig, on ${getDayOfWeek(day, month, year)}, ${month}/${day}/${year}, at ${venue}, ${address}`} /></a> : null}
-      <h4>{`${getDayOfWeek(day, month, year)}, ${month}/${day}/${year}`}</h4>
+      {recurringMessage ?
+        <h4>{recurringMessage}</h4> :
+        <h4>{`${getDayOfWeek(day, month, year)}, ${month}/${day}/${year}`}</h4>
+      }
       <p className='venue'>{venue}<span className='address'>{address}</span></p>
       <p className='description'>{description}</p>
       <p className='time'>{time}</p>
