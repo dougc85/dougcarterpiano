@@ -35,7 +35,7 @@ export const projects = [
         ),
         name: "Silver Street",
         artist: 'Jacob Wendt',
-        description: "Compositions & drums by Jacob; Jimmy Emerzian - Tenor Sax, Harry Ostrander - Trumpet, David Reynoso - Bass, Me - Piano",
+        description: "Compositions & drums by Jacob; Tenor Sax - Jimmy Emerzian, Trumpet - Harry Ostrander, Bass - David Reynoso, Piano - Me",
         link: 'https://jacobwendt.bandcamp.com/album/silver-street',
         releaseDate: 'October 18, 2024',
     },

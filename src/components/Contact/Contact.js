@@ -17,6 +17,7 @@ function Contact() {
 
   const [finishedSend, setFinishedSend] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [sendFail, setSendFail] = useState('');
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -61,7 +62,7 @@ function Contact() {
 
     try {
       await send(
-        'service_01g0u2r',
+        'service_omhk8kk',
         'template_q2k1uhn',
         toSend,
         '3FAvkeZqWKI-934wG',
@@ -73,6 +74,7 @@ function Contact() {
       setFinishedSend(true);
     }
     catch (error) {
+      setSendFail('There was an error sending your message. Message me on Instagram instead, and kindly let me know about this issue!');
       console.log(error);
     }
 
@@ -144,6 +146,7 @@ function Contact() {
               {loading && <Loading spinnerOnly size="2" />}
             </button>
           </FormElementButton>
+          {sendFail && <p style={{ color: 'red' }}>{sendFail}</p>}
         </ContactForm>}
         {finishedSend &&
           <p>Your message has been sent.</p>

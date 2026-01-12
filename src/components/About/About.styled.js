@@ -12,13 +12,13 @@ export const AboutStyled = styled.section`
   background-color: white;
   margin: 4rem auto;
 
-  ${aboutQuery(`
-    margin: 1rem auto;
-  `)}
+    ${aboutQuery(`
+      margin: 1rem auto;
+    `)}
 
-${aboutNarrowQuery(`
-    flex-direction: column;
-  `)}
+    ${aboutNarrowQuery(`
+        flex-direction: column;
+    `)}
 
   img {
     height: 350px;
@@ -26,14 +26,14 @@ ${aboutNarrowQuery(`
     object-fit: cover;
     object-position: top;
 
-    ${aboutQuery(`
-      height: 250px;
-    `)}
+      ${aboutQuery(`
+        height: 250px;
+      `)}
 
-    ${aboutNarrowQuery(`
-      margin-bottom: 2rem;
-    `)}
-  }
+      ${aboutNarrowQuery(`
+        margin-bottom: 2rem;
+      `)}
+    }
 
   >div {
     margin-left: 4rem;

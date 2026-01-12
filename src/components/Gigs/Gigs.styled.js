@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../../partials';
 
-const { gigsQuery, gigsNarrowQuery, verySmallPhoneQuery, aboutNarrowQuery } = mediaQueries;
+const { gigsQuery, gigsNarrowQuery, verySmallPhoneQuery, aboutQuery, aboutNarrowQuery } = mediaQueries;
 
 export const GigsStyled = styled.section`
   background-color: white;
@@ -34,7 +34,7 @@ export const GigsStyled = styled.section`
 
     ${aboutNarrowQuery(`
       text-align: center;
-      margin-bottom: -1rem;
+      margin-bottom: 1rem;
     `)}
   }
 

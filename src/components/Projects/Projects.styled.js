@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../../partials';
 
-const { verySmallPhoneQuery } = mediaQueries;
+const { verySmallPhoneQuery, aboutQuery } = mediaQueries;
 
 export const ProjectsStyled = styled.section`
   background-color: #1c1c1c;
@@ -11,6 +11,10 @@ export const ProjectsStyled = styled.section`
   font-size: 1.8rem;
   display: flex;
   flex-direction: column;
+
+  ${aboutQuery(`
+    padding: 4rem 4rem 0 4rem;
+  `)}
   
 
   ul {
@@ -19,6 +23,10 @@ export const ProjectsStyled = styled.section`
   h2 {
     margin-bottom: 4rem;
     font-size: 4rem;
+
+    ${aboutQuery(`
+      margin-bottom: 5rem;
+    `)}
 
     ${verySmallPhoneQuery(`
       font-size: 3rem;
@@ -36,5 +44,10 @@ export const ProjectsStyled = styled.section`
   h3 {
     margin-bottom: 2rem;
     text-align: left;
+
+    ${aboutQuery(`
+      text-align: center;
+      margin-bottom: 3rem;
+    `)}
   }
 `
