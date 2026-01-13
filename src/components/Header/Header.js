@@ -37,6 +37,9 @@ function Header() {
       <h1>
         Doug Carter
         <span>
+          <span className='visually-hidden'>
+            Jazz 
+          </span>
           Pianist
         </span>
       </h1>

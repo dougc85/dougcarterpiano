@@ -8,7 +8,7 @@ function About() {
 
       <img src="/images/profile.jpg" alt="Doug Carter, pianist" />
       <div>
-        <h2> </h2>
+        <h2 className='visually-hidden'>About Doug Carter</h2>
         <p>
           <span>
             Doug Carter’s career as a pianist and composer spans twenty years and numerous genres. 

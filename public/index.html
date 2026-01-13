@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Doug Carter | Pianist & Composer</title>
+    <meta name="description" content="Doug Carter is a pianist and composer from Southern California. Hear recent recordings, learn about projects and upcoming gigs, and get in touch for lessons or collaborations.
+  " />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <!-- Open Graph (for Google/social previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Doug Carter Piano" />
+    <meta property="og:title" content="Doug Carter | Pianist & Composer" />
+    <meta property="og:description" content="Doug Carter is a pianist and composer from Southern California. Hear recordings, see projects, and contact for gigs or lessons." />
+    <meta property="og:url" content="https://dougcarterpiano.com/" />
+    <meta property="og:image" content="https://dougcarterpiano.com/images/og-home.jpg" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Doug Carter | Pianist & Composer" />
+    <meta name="twitter:description" content="Pianist and composer. Recordings, projects, and contact." />
+    <meta name="twitter:image" content="https://dougcarterpiano.com/images/og-home.jpg" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>Doug Carter</title>
-</head>
+    <link rel="canonical" href="https://dougcarterpiano.com/" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Structured data: Person/Music -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Doug Carter",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Long Beach, CA"
+      },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Los Angeles County, CA" },
+        { "@type": "AdministrativeArea", "name": "Orange County, CA" }
+      ],
+      "jobTitle": "Jazz pianist and composer and teacher",
+      "url": "https://dougcarterpiano.com/",
+      "sameAs": [
+        "https://www.instagram.com/dougcarterpiano"
+      ],
+      "image": "https://dougcarterpiano.com/images/profile.jpg",
+      "knowsAbout": [
+        "Piano",
+        "Composition",
+        "Improvisation",
+        "Small ensemble performance",
+        "Contemporary jazz",
+        "Music Education"
+      ],
+      "memberOf": [
+        {
+          "@type": "MusicGroup",
+          "name": "Jacob Wendt Quintet",
+          "url": "https://jacobwendt.com",
+        "sameAs": [
+          "https://jacobwendt.com"
+        ]
+        },
+        {
+          "@type": "MusicGroup",
+          "name": "Jazzy Ash and the Leapin Lizards",
+          "url": "https://jazzyash.com",
+          "sameAs": [
+            "https://jazzyash.com"
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-</body>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+        This HTML file is a template.
+        If you open it directly in the browser, you will see an empty page.
+
+        You can add webfonts, meta tags, or analytics to this file.
+        The build step will place the bundled scripts into the <body> tag.
+
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+  </body>
 
 </html>
