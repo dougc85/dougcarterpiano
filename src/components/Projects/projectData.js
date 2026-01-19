@@ -40,6 +40,14 @@ export const projects = [
         releaseDate: 'October 18, 2024',
     },
     {
+        name: "www.tunepicker.app",
+        artist: 'Doug Carter (as web developer)',
+        description: "I built this web app to help musicians pick tunes on gigs and in practice sessions. It picks recently learned songs frequently to help reinforce them, and then also mixes in older songs to keep them fresh. It also suggests keys to play the songs in to reinforce playing everything in all 12 keys.",
+        link: 'https://www.tunepicker.app',
+        releaseDate: 'January 23, 2023',
+        image: "/images/tunepicker.png",
+    },
+    {
         name: "Songs From the Playground",
         artist: 'Jazzy Ash',
         description: "Arrangements by Ashli St. Armant & me; vocals - Ash, piano - me",
@@ -47,24 +55,24 @@ export const projects = [
         releaseDate: 'Summer 2021',
         image: "/images/playground.jpg",
     },
-{
-    name: "I Was Here",
-    artist: 'Ryan Rost',
-    description: "Compositions and Bass by Ryan; 1st album by the Apropos a'GoGo trio (Peter Buck on drums, me on piano)",
-    link: 'https://ryanrost.bandcamp.com/album/i-was-here',
-    releaseDate: 'October 29, 2020',
-    albumTag: (
-        <iframe
-            style={{ border: 0, width: 200, height: 200 }}
-            src="https://bandcamp.com/EmbeddedPlayer/album=2604498395/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/"
-            seamless
-            title="I Was Here by Ryan Rost"
-        >
-            <a href="https://ryanrost.bandcamp.com/album/i-was-here">I Was Here by Ryan Rost</a>
-</iframe>
-    )
-  },
-  {
+    {
+        name: "I Was Here",
+        artist: 'Ryan Rost',
+        description: "Compositions and Bass by Ryan; 1st album by the Apropos a'GoGo trio (Peter Buck on drums, me on piano)",
+        link: 'https://ryanrost.bandcamp.com/album/i-was-here',
+        releaseDate: 'October 29, 2020',
+        albumTag: (
+            <iframe
+                style={{ border: 0, width: 200, height: 200 }}
+                src="https://bandcamp.com/EmbeddedPlayer/album=2604498395/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/"
+                seamless
+                title="I Was Here by Ryan Rost"
+            >
+                <a href="https://ryanrost.bandcamp.com/album/i-was-here">I Was Here by Ryan Rost</a>
+            </iframe>
+        )
+    },
+    {
     name: "The Return to Queendom",
     artist: 'Andrée Belle',
     description: "Compositions by Andrée and Tim Conley; featuring a diverse array of musicians, w/ me on Wurlitzer",
@@ -82,5 +90,5 @@ export const projects = [
         </a>
         </iframe>
     )
-  }
+    }
 ]
