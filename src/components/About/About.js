@@ -5,8 +5,22 @@ import { Icon } from "@iconify/react";
 function About() {
   return (
     <AboutStyled id="About">
-
-      <img src="/images/profile.jpg" alt="Doug Carter, pianist" />
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="/images/mobileProfile.jpg"
+          type="image/jpeg"
+        />
+        <img
+          src="/images/desktopProfile.jpg"
+          alt="Doug Carter, pianist"
+          width="3000"
+          height="4498"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
       <div>
         <h2 className='visually-hidden'>About Doug Carter</h2>
         <p>

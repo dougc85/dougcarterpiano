@@ -35,12 +35,16 @@ export const AboutStyled = styled.section`
 
   img {
     height: 350px;
+    width: 233px;
+    max-width: 100%;
     border-radius: 20px;
     object-fit: cover;
     object-position: top;
 
       ${aboutQuery(`
         height: 250px;
+        width: 167px;
+        max-width: 100%;
       `)}
 
       ${aboutNarrowQuery(`

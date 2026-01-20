@@ -22,10 +22,6 @@ export const ProjectStyled = styled.li`
     object-fit: cover;
     object-position: top;
 
-    ${verySmallPhoneQuery(`
-      width: 200px;
-      height: 150px;
-    `)}
   }
 
   div {

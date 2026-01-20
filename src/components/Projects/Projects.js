@@ -18,10 +18,10 @@ function Projects() {
                 albumTag={project.albumTag}
                 image={project.image}
                 name={project.name}
-              description={project.description} 
-              link={project.link} 
-              artist={project.artist} 
-              releaseDate={project.releaseDate}/>
+                description={project.description} 
+                link={project.link} 
+                artist={project.artist} 
+                releaseDate={project.releaseDate}/>
               {                
                 index < upcomingProjects.length - 1 ? <hr /> : null
               }
